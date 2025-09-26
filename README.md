@@ -61,8 +61,11 @@ You can customize the suggested amounts and the form's display text using attrib
 
 ```
 
-[alatpay\_donation\_form title="Help Us Reach Our Goal" description="Every Naira counts. Donate today." amounts="500, 1000, 5000"]
-
+[alatpay_donation_form 
+    title="Help Us Reach Our Goal" 
+    description="Every Naira counts. Choose an amount or enter your own." 
+    amounts="500, 1000, custom, 5000"
+]
 ```
 
 ## ❓ Frequently Asked Questions
@@ -75,6 +78,9 @@ A: All confirmation is handled by **ALATPay's webhook**. You **MUST configure th
 
 **Q: Where can I change the default suggested donation amounts?**
 A: You can set the suggested amounts directly within the shortcode by using the `amounts` attribute, separating values with a comma (e.g., `amounts="1000,2000,5000"`).
+
+**Q: How do I allow donors to enter their own amount?**
+A: Use the keyword custom within the amounts attribute of the shortcode (e.g., amounts="1000, custom, 5000"). The plugin will automatically render a user input field for that option.
 
 ## 📜 Changelog
 
